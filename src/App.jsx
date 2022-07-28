@@ -1,18 +1,9 @@
-import Header from "./components/Header";
-import SwitchTheme from "./components/SwitchTheme";
-import { Outlet } from "react-router-dom";
-import { Container } from "@mui/system";
+import React from "react";
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Container component="main">
-        <SwitchTheme />
-        <Outlet />
-      </Container>
-    </>
-  );
+  //write code here
+
+  return <h1> Hello from MUI movie app </h1>;
 }
 
 export default App;
