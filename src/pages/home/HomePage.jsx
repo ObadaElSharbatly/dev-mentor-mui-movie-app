@@ -1,9 +1,15 @@
+import { Box } from "@mui/material";
 import React from "react";
+import SearchBar from "./components/SearchBar";
 
 function HomePage() {
   //write code here
 
-  return <h1> This is HomePage Component </h1>;
+  return (
+    <Box>
+      <SearchBar />
+    </Box>
+  );
 }
 
 export default HomePage;

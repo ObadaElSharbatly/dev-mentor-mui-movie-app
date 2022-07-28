@@ -16,7 +16,12 @@ function Header() {
         >
           <Grid item>
             <Link to="/">
-              <Typography variant="h4" component="p" color="#fff">
+              <Typography
+                variant="h4"
+                component="p"
+                color="#fff"
+                fontWeight={700}
+              >
                 Movie App
               </Typography>
             </Link>
