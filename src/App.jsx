@@ -1,8 +1,17 @@
+import Header from "./components/Header";
+import SwitchTheme from "./components/SwitchTheme";
+import { Outlet } from "react-router-dom";
+import { Container } from "@mui/system";
+
 function App() {
   return (
-    <div>
-      <h1>Hello from app page</h1>
-    </div>
+    <>
+      <Header />
+      <Container component="main">
+        <SwitchTheme />
+        <Outlet />
+      </Container>
+    </>
   );
 }
 
