@@ -1,13 +1,16 @@
 import { Stack, Switch, Typography } from "@mui/material";
 import React from "react";
 
-function SwitchTheme() {
+function SwitchTheme({ value, setValue }) {
   //write code here
+  function switchTheValue() {
+    setValue(prev => !prev);
+  }
   return (
     <Stack direction="row" spacing={1} alignItems="center">
-      <Typography>Light</Typography>
-      <Switch />
-      <Typography>Dark</Typography>
+      <Typography color="text.primary">Light</Typography>
+      <Switch checked={value} onChange={switchTheValue} />
+      <Typography color="text.primary">Dark</Typography>
     </Stack>
   );
 }
