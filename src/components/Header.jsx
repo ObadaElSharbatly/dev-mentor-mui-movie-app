@@ -6,7 +6,10 @@ function Header() {
   //write code here
 
   return (
-    <Box sx={{ backgroundColor: "black", height: "70px" }} component="header">
+    <Box
+      sx={{ backgroundColor: "background.header", height: "70px" }}
+      component="header"
+    >
       <Container sx={{ height: "100%" }}>
         <Grid
           container
