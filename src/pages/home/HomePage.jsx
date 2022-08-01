@@ -6,7 +6,7 @@ function HomePage() {
   //write code here
 
   return (
-    <Box>
+    <Box mt={3}>
       <SearchBar />
     </Box>
   );
