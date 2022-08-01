@@ -7,12 +7,11 @@ function SearchBar() {
 
   return (
     <Box sx={{ display: " flex", alignItems: "flex-end" }}>
-      <SearchIcon fontSize="large" sx={{ mr: 2 }} color="primary" />
+      <SearchIcon fontSize="large" sx={{ mr: 2 }} />
       <TextField
         id="standard-basic"
         label="Standard"
         variant="standard"
-        color="primary"
         fullWidth
       />
     </Box>
