@@ -1,21 +1,13 @@
 import { createTheme } from "@mui/material";
+import { darkModePalette, lightModePalette } from "./palette";
+import { darkShadows, lightShadows } from "./shadows";
 
 export const lightTheme = createTheme({
-  palette: {
-    mode: "light",
-    background: {
-      header: "#0f171e",
-      body: "#ffffff",
-    },
-  },
+  palette: lightModePalette,
+  shadows: darkShadows,
 });
 
 export const darkTheme = createTheme({
-  palette: {
-    mode: "dark",
-    background: {
-      header: "#0f171e",
-      body: "#1a242f",
-    },
-  },
+  palette: darkModePalette,
+  shadows: lightShadows,
 });

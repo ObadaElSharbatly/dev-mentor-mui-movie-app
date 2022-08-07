@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
+import FoundedMovies from "./components/FoundedMovies";
 import SearchBar from "./components/SearchBar";
 
 function HomePage() {
@@ -8,6 +9,7 @@ function HomePage() {
   return (
     <Box>
       <SearchBar />
+      <FoundedMovies />
     </Box>
   );
 }
