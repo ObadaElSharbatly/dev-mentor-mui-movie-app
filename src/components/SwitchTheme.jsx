@@ -7,7 +7,7 @@ function SwitchTheme({ value, setValue }) {
     setValue(prev => !prev);
   }
   return (
-    <Stack direction="row" spacing={1} alignItems="center">
+    <Stack direction="row" spacing={1} alignItems="center" my={2}>
       <Typography color="text.primary">Light</Typography>
       <Switch checked={value} onChange={switchTheValue} />
       <Typography color="text.primary">Dark</Typography>

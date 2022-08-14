@@ -26,6 +26,7 @@ function MovieCard({ movieObject }) {
         sx={{
           position: "relative",
           height: "450px",
+          borderRadius: 3,
           ":hover": {
             boxShadow: shadows[5],
           },
