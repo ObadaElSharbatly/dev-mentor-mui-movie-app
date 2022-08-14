@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import SwitchTheme from "./components/SwitchTheme";
+import { SearchContextProvider } from "./contexts/SearchContext";
 import { darkTheme, lightTheme } from "./theme/theme";
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
         <Header />
         <Container>
           <SwitchTheme value={isDarkMode} setValue={setIsDarkMode} />
-          <Outlet />
+          <SearchContextProvider>
+            <Outlet />
+          </SearchContextProvider>
         </Container>
       </Box>
     </ThemeProvider>
