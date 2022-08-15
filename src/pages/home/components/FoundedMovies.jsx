@@ -14,7 +14,7 @@ function FoundedMovies() {
 
   useEffect(() => {
     if (searchWord) {
-      const url = `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${searchWord}`;
+      const url = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${searchWord}`;
       performFetch(url).then(data => {
         if (data) setMovieList(data.Search);
       });
@@ -30,7 +30,7 @@ function FoundedMovies() {
   }, [error]);
 
   return (
-    <Box mt={3}>
+    <Box py={3}>
       {error && <ErrorMsg error={error} />}
       {isLoading && <Loader />}
       <Grid container spacing={2}>

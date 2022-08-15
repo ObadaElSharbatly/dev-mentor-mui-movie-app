@@ -33,7 +33,7 @@ function MovieCard({ movieObject }) {
         }}
       >
         <CardMedia
-          image={Poster}
+          src={Poster}
           alt="movie poster"
           component="img"
           sx={{
