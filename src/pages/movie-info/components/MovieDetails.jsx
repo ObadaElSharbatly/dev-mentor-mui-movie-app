@@ -1,12 +1,15 @@
 import { Box, Button, Grid, Rating, Typography } from "@mui/material";
-import React from "react";
+import React, { useContext } from "react";
 import OneDetail from "./OneDetail";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import { FavListContext } from "../../../contexts/FavListContext";
 
-function MovieDetails({ details }) {
+function MovieDetails({ isFav, favFunc }) {
   //write code here
+  const { movieObject } = useContext(FavListContext);
   const { Title, Year, imdbRating, Country, Genre, Language, Plot, Runtime } =
-    details;
+    movieObject;
   return (
     <Box>
       <Typography variant="h4" component="h3" color="primary">
@@ -56,10 +59,11 @@ function MovieDetails({ details }) {
       <Button
         fullWidth
         variant="contained"
+        onClick={favFunc}
         color="primary"
-        endIcon={<FavoriteBorderIcon />}
+        endIcon={isFav ? <FavoriteIcon /> : <FavoriteBorderIcon />}
       >
-        add to favorite
+        {isFav ? "Remove from favorite" : "Add to favorite"}
       </Button>
     </Box>
   );
