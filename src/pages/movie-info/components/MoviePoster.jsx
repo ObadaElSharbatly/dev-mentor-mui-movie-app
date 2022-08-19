@@ -25,7 +25,7 @@ function MoviePoster({ isFav, favFunc }) {
       >
         {isFav ? <FavoriteIcon /> : <FavoriteBorderIcon />}
       </Fab>
-      <CardMedia src={movieObject.Poster} component="img" />
+      <CardMedia src={movieObject.Poster} />
     </Card>
   );
 }

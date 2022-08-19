@@ -17,7 +17,7 @@ const useFetch = () => {
     try {
       setIsLoading(true);
       setError(null);
-      await wait(800);
+      await wait(400);
       const data = await getData(link);
 
       if (data.Response === "True") {

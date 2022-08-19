@@ -38,7 +38,7 @@ function MovieDetails({ isFav, favFunc }) {
               ml={2.5}
             >
               <Grid item>
-                <Typography component="span" variant="h6">
+                <Typography component="span" variant="h6" color="text.primary">
                   {imdbRating}
                 </Typography>
               </Grid>

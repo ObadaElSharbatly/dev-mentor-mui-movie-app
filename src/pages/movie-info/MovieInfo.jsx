@@ -47,7 +47,7 @@ function MovieInfo() {
       {isLoading && <Loader />}
       {error && <ErrorMsg error={error} />}
       {movieObject && (
-        <Box my={3}>
+        <Box py={3}>
           <Grid container spacing={3} justifyContent="center">
             <Grid item md={5}>
               <MoviePoster isFav={isFav} favFunc={removeAddToFavList} />

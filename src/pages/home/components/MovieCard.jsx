@@ -35,7 +35,6 @@ function MovieCard({ movieObject }) {
         <CardMedia
           src={Poster}
           alt="movie poster"
-          component="img"
           sx={{
             height: "100%",
           }}
